@@ -1,0 +1,217 @@
+                                    <!-- Internal JavaScript: -->
+
+<html>
+    <head>
+        <script language = "javascript" type = "text/javascript">
+            document.write("Hello World!")
+            console.log("Heloo!")
+        </script>
+    </head>
+</html> 
+
+                                    <!-- External JavaScript: -->
+
+<html>
+    <head>
+        <script src="j1.js"></script>
+    </head>
+</html>
+
+
+                                    <!-- Variables
+                                        • var
+                                        • let
+                                        • const  -->
+
+<html>
+    <head>
+        <script>
+            var a=200 //global variable
+            function b(){
+                document.writeln(a)
+            }
+            document.writeln(a)
+            b()
+        </script>
+    </head>
+</html> 
+
+                                    <!-- • var -->
+
+<!-- 1. The below code example explains the use of the var keyword to declare the variables in
+JavaScript. -->
+<html>
+    <head>
+        <script>
+            var a=10
+            function f1(){
+                var b=20
+                console.log(a,b)
+            }
+            f1()
+            console.log(a)
+        </script>
+    </head>
+</html> 
+
+<!-- 2. The below example explains the behavior of var variables when declared inside a function
+and accessed outside of it. -->
+<html>
+    <head>
+        <script>
+            function f1(){
+                var a=10
+                console.log(a)
+            }
+            f1()
+            console.log(a)  // A cannot be accessible outside of function
+        </script>
+    </head>
+</html> 
+
+<!-- 3. The below code redeclare a variable with same name in the same scope using the var
+keyword, which gives no error in the case of var keyword. -->
+<html>
+    <head>
+        <script>
+            var a=10  // User can re-declare variable using var
+            var a=8   // User can update var variable
+            a=7
+            console.log(a)
+        </script>
+    </head>
+</html>
+
+<!-- 4. The below code explains the initialized the variables after accessing. -->
+<html>
+    <head>
+        <script>
+            console.log(a)
+            var a=10  //initialized the variable after accessing
+        </script>
+    </head>
+</html>
+
+
+                                    <!-- • Let -->
+
+<!--1. The below code declares the variable using the let keyword. -->
+<html>
+    <head>
+        <script>
+            let a = 10;
+            function f() {
+            let b = 9
+            console.log(b); //local scope
+            console.log(a); //global scope
+        }
+        f();
+        console.log(b); // Error: b is not defined
+        </script>
+    </head>
+</html> 
+
+<!-- Block scoped -->
+<html>
+    <head>
+        <script>
+            function blockScopedExample() {
+            var b=5
+            if (b>4) {
+                let a = 1; // Declared with let inside an if block
+                console.log(a); // Output: 1 (Accessible inside the block)
+            }
+            console.log(a); // Error: a is not defined (Not accessible outside the block)
+        }
+            blockScopedExample();
+        </script>
+    </head>
+</html> 
+
+<!-- 2. The below code explains the behavior of let variables when they are re-declared in the
+same scope. -->
+<html>
+    <head>
+        <script>
+            let a = 10
+            // It is not allowed
+            let a = 10
+            // It is allowed
+            a = 10
+            console.log(a);
+        </script>
+    </head>
+</html>
+
+<!-- 3.The below code explains the behavior of let variable when it is redeclared in the different
+scopes. -->
+<html>
+    <head>
+        <script>
+            let a = 10
+            function f1() {
+            let a = 9
+            console.log(a) // It prints 9 (local)
+            }
+            f1()
+            console.log(a) // It prints 10 (global)
+        </script>
+    </head>
+</html>
+
+<!-- 4. The below code explains the initialized the variables after accessing. -->
+<html>
+    <head>
+        <script>
+            console.log(a);
+            let a = 10;
+        </script>
+    </head>
+</html> 
+
+                                    <!-- • Const -->
+
+<!-- 1.This code tries to change the value of the const variable (reassignment). -->
+<html>
+    <head>
+        <script>
+            const a = 10;
+            function f() {
+            a = 9
+            console.log(a)
+            }
+            f();
+        </script>
+    </head>
+</html> 
+
+ <!-- 2.The below code explains the behavior of const variables when they are redeclared in the
+same scope. -->
+<html>
+    <head>
+        <script>
+            const a = 10
+            // It is not allowed
+            const a = 10
+            // It is not allowed
+            a = 10
+        </script>
+    </head>
+</html> 
+
+<!-- 3. No reassignment is happening two independent const variables (a) exist in different
+scopes. -->
+<html>
+    <head>
+        <script>
+            const a = 10;
+            function f() {
+            const a = 9
+            console.log(a)
+            }
+            f();
+            console.log(a);
+        </script>
+    </head>
+</html> 
+
