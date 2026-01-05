@@ -1,0 +1,167 @@
+                                        <!-- Conditions and Loops-->
+<!-- CONDITIONS  -->
+<!-- 1. if Statement -->
+ <html>
+    <head>
+        <script>
+            let isLoggedIn = true;
+            if (isLoggedIn) {
+                console.log("Welcome user");
+            }
+        </script>
+    </head>
+ </html>
+
+<!-- 2. if...else -->
+  <html>
+    <head>
+        <script>
+            let age = 16;
+            if (age >= 18) {
+                console.log("Allowed");
+            } 
+            else {
+                console.log("Not allowed");
+            }
+        </script>
+    </head>
+  </html>
+
+<!-- 3. else if -->
+ <html>
+    <head>
+        <script>
+            let score = 82;
+            if (score >= 90) {
+                console.log("Grade A");
+            } 
+            else if (score >= 75) {
+                console.log("Grade B");
+            } 
+            else {
+                console.log("Grade C");
+            }
+        </script>
+    </head>
+ </html>
+
+<!-- 4. switch Statement -->
+<html>
+    <head>
+        <script>
+            let role = "admin";
+            switch (role) {
+                case "admin":
+                    console.log("Full access");
+                    break;
+                case "editor":
+                    console.log("Edit access");
+                    break;
+                case "viewer":
+                    console.log("Read only");
+                    break;
+                default:
+                    console.log("No access");
+            }
+        </script>
+    </head>
+</html>
+
+<!-- 5. Ternary Operator (? :) -->
+ <html>
+    <head>
+        <script>
+            let age1 = 20;
+            let result = age1 >= 18 ? "Adult" : "Minor";
+            console.log(result);
+        </script>
+    </head>
+ </html>
+
+
+<!-- Lopp -->
+<!-- 1. for loop -->
+ <html>
+    <head>
+        <script>
+            for (let i = 1; i <= 5; i++) {
+                console.log(i);
+            }
+        </script>
+    </head>
+ </html>
+
+<!-- 2. while loop -->
+<html>
+    <head>
+        <script>
+            let i = 1;
+            while (i <= 5) {
+                console.log(i);
+                i++;
+            }
+        </script>
+    </head>
+</html>
+
+<!-- 3. do...while loop -->
+ <html>
+    <head>
+        <script>
+            let i1 = 6;
+            do {
+                console.log(i1);
+                i++;
+            } 
+            while (i1 <= 5);
+        </script>
+    </head>
+ </html>
+
+ <!-- 4. for...of Loop -->
+  <html>
+    <head>
+        <script>
+            let fruits = ["apple", "banana", "orange"];
+            // for...of loop iterates over the VALUES of the array
+            for (let fruit of fruits) {
+                console.log(fruit);
+            }
+        </script>
+    </head>
+  </html>
+
+<!-- 5. for...in Loop (with Objects) -->
+ <html>
+    <head>
+        <script>
+            let user = {
+                name: "Ayush",
+                age: 19,
+                city: "Delhi"
+            };
+            // for...in loop iterates over the KEYS of the object
+            for (let key in user) {
+                console.log(key + ": " + user[key]);
+            }
+        </script>
+    </head>
+ </html>
+
+<!-- 6. for...in Loop with Arrays -->
+ <html>
+    <head>
+        <script>
+            let students = ["ABC", "PQR", "XYZ"];
+            // for...in loop iterates over the INDEXES (keys) of the array
+            for (let i in students) {
+                // 'i' represents the index (0, 1, 2)
+                console.log(i);
+                // Access the value using the index
+                console.log(students[i]);
+            }
+        </script>
+    </head>
+ </html>
+
+ 
