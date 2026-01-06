@@ -1,0 +1,130 @@
+<!-- Array Methods -->
+<!--1. push()-->
+<html>
+
+<head>
+    <script>
+        let fruits = ["apple", "banana"];
+        fruits.push("orange");
+        console.log(fruits); // ["apple", "banana", "orange"]
+    </script>
+</head>
+
+</html>
+
+<!-- 2. pop() -->
+<html>
+
+<head>
+    <script>
+        let numbers = [10, 20, 30];
+        let removed = numbers.pop();
+        console.log(numbers); // [10, 20]
+        console.log(removed); // 30
+    </script>
+</head>
+
+</html>
+
+<!-- 3. map() -->
+<html>
+
+<head>
+    <script>
+        let nums = [1, 2, 3, 4];
+        let squares = nums.map(num => num * num);
+        console.log(squares); // [1, 4, 9, 16]
+    </script>
+</head>
+
+</html>
+
+<!-- 4. filter() -->
+<html>
+
+<head>
+    <script>
+        let ages = [12, 18, 25, 14];
+        let adults = ages.filter(age => age >= 18);
+        console.log(adults);// [18, 25]
+    </script>
+</head>
+
+</html>
+
+<!-- 5. forEach() -->
+<html>
+
+<head>
+    <script>
+        let nums1 = [1, 2, 3, 4];
+        nums1.forEach(num => console.log(num));
+    </script>
+</head>
+
+</html>
+
+<!-- 6. includes() -->
+<html>
+
+<head>
+    <script>
+        let fruits1 = ["apple", "banana", "orange"];
+        let hasBanana = fruits1.includes("banana");
+        console.log(hasBanana); // true
+    </script>
+</head>
+
+</html>
+
+<!-- 7.find() -->
+<html>
+
+<head>
+    <script>
+        let nums2 = [1, 2, 3, 4];
+        let evenNum = nums2.find(num => num % 2 === 0);
+        console.log(evenNum); // 2
+    </script>
+</head>
+
+</html>
+
+<!-- 8. findIndex() -->
+<html>
+
+<head>
+    <script>
+        let nums3 = [1, 2, 3, 4];
+        let evenNumIndex = nums3.findIndex(num => num % 2 === 0);
+        console.log(evenNumIndex); // 1
+    </script>
+</head>
+
+</html>
+
+<!-- 9. join() -->
+<html>
+
+<head>
+    <script>
+        let fruits2 = ["apple", "banana", "orange"];
+        let joined = fruits2.join(", ");
+        console.log(joined); // "apple, banana, orange"
+    </script>
+</head>
+
+</html>
+
+<!-- 10. reverse() -->
+<html>
+
+<head>
+    <script>
+        let fruits3 = ["apple", "banana", "orange"];
+        let reversed = fruits3.reverse();
+        console.log(reversed); // ["orange", "banana", "apple"]
+    </script>
+</head>
+
+</html>
