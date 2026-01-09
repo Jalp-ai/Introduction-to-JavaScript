@@ -1,0 +1,118 @@
+<!-- Functions -->
+<!-- 1. Function Triggered by an Event (Button Click) -->
+<html>
+
+<head>
+    <script>
+        function showMessage() {
+            alert("Hello, world!");
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="showMessage()">Click Me</button>
+</body>
+
+</html>
+
+<!-- 2. Function Called Explicitly from JavaScript Code -->
+<html>
+
+<body>
+    <script>
+        function add(a, b) {
+            return a + b;
+        }
+        let result = add(5, 10);
+        document.write(result);
+    </script>
+</body>
+
+</html>
+
+<!-- 3. Automatically Executed Function (Self-Invoking Function) -->
+<html>
+
+<body>
+    <script>
+        (function () {
+            alert("Hello, world!");
+        })();
+    </script>
+</body>
+
+</html>
+
+<!-- Example: Function Without Passing Parameters -->
+<html>
+    <head>
+        <script>
+            function fun() {
+                document.write("Hello! How are you?");
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="fun()" value="Click">
+    </body>
+</html>
+
+<!-- Example: Function With Passing Parameters -->
+<html>
+    <head>
+        <script>
+            function fun(f_name, l_name) {
+                document.write("Hello " + f_name + " " + l_name + "!");
+            }
+        </script>
+    </head>
+<body>
+    <input type="button" onclick="fun('ABC','XYZ')" value="Click">
+</body>
+</html>
+
+
+<!-- Example: Function with Return Value -->
+<html>
+    <body>
+        <script>
+            function Product(a, b) {
+                return a * b;
+            }
+        document.write(Product(6, 10));
+    </script>
+    </body>
+</html>
+
+<!-- Assigning a Function to a Variable (Function Expression) -->
+<html>
+    <body>
+        <script>
+            var a = function add(x, y) {
+                return x + y;
+            };
+            let result1 = a(3, 5);
+            document.write(result1);
+        </script>
+    </body>
+</html>
+
+<!-- Example: One Function Calling Another Function -->
+<html>
+    <head>
+        <script>
+            function info(first, last) {
+            var full = first + " " + last;
+            return full;
+            }
+            function hello() {
+            var result = info('abc', 'xyz');
+            document.write(result);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="hello()" value="info">
+    </body>
+</html>
